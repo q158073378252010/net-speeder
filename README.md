@@ -52,5 +52,8 @@ Linux Cooked interface使用编译（venetX，OpenVZ）：
 使用方法(需要root权限启动）：
 
     #参数：./net_speeder 网卡名 加速规则（bpf规则）
+    #网卡名称获得命令命令 centos_6.5：ifconfig 
+    例：./net_speeder eth0 "ip"(此处只需要写入写入“ip”即可。非vpsip）的
+        ./net_speeder eth0 "tcp"
     #ovz用法(加速所有ip协议数据)： 
     ./net_speeder venet0 "ip"

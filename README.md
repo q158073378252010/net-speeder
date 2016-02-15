@@ -54,7 +54,7 @@ Linux Cooked interface使用编译（venetX，OpenVZ）：
     #参数：./net_speeder 网卡名 加速规则（bpf规则）
     #网卡名称获得命令命令 centos_6.5：ifconfig 
     #注：可用 hostname -I | tr ' ' '\n' | grep '[0-9]' | grep -v '127\.0\.0\.' 来获主机取外网ip）
-    例：./net_speeder eth0 "ip"(此处只需要写入写入“ip”即可。非vps ip）的
+    例：./net_speeder eth0 "ip"(此处只需要写入“ip”即可。非vps ip），，该处ip的含义是加速所有ip协议数据
         ./net_speeder eth0 "tcp"
     #ovz用法(加速所有ip协议数据)： 
     ./net_speeder venet0 "ip"
